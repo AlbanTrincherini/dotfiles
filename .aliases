@@ -1,0 +1,17 @@
+#
+# ~/.bash_aliases
+#
+
+# Base
+alias b='cd ..'
+alias ls='ls --color=auto'
+alias la='ls -A'
+alias grep='grep --color=auto'
+
+# Other
+alias windows='systemctl reboot --boot-loader-entry=auto-windows'
+alias onefetch='onefetch --true-color=never'
+
+# Kitty
+alias s='kitten ssh'
+alias icat='kitten icat'

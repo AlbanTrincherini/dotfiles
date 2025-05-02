@@ -1,0 +1,110 @@
+// Inspired by Catnap
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+      "source": "Windows",
+      "padding": {
+        "top": 2,
+        "left": 10,
+        "right": 11
+      }
+     },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": "              ",
+            "type": "custom"
+        },
+        {
+            "key": "╭────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#31} user     {#keys}│",
+            "type": "title",
+            "format": "{user-name}"
+        },
+        {
+            "key": "│ {#32}󰇅 hname    {#keys}│",
+            "type": "title",
+            "format": "{host-name}"
+        },
+        {
+            "key": "│ {#33}󰅐 datetime {#keys}│",
+            "type": "datetime",
+            "format": "{day-in-month}/{month-pretty}/{year} — {hour-pretty}:{minute-pretty}"
+        },
+        {
+            "key": "│ {#34}󱫡 uptime   {#keys}│",
+            "type": "uptime"
+        },
+        {
+            "key": "│ {#35}\udb82\udcc7 distro   {#keys}│",
+            "type": "os"
+        },
+        {
+            "key": "│ {#36} kernel   {#keys}│",
+            "type": "kernel"
+        },
+        {
+            "key": "│ {#31}󰏖 packages {#keys}│",
+            "type": "packages"
+        },
+        {
+            "key": "│ {#32}󰇄 desktop  {#keys}│",
+            "type": "de"
+        },
+        {
+            "key": "│ {#33} term     {#keys}│",
+            "type": "terminal"
+        },
+        {
+            "key": "│ {#34} shell    {#keys}│",
+            "type": "shell"
+        },
+        {
+            "key": "│ {#35}󰍛 cpu      {#keys}│",
+            "type": "cpu",
+            "showPeCoreCount": true,
+            "temp": true
+
+        },
+        {
+            "key": "│ {#36}󰉉 disk     {#keys}│",
+            "type": "disk",
+            "folders": "/"
+        },
+        {
+            "key": "│ {#31} memory   {#keys}│",
+            "type": "memory",
+        },
+        {
+            "key": "│ {#32} battery  {#keys}│",
+            "type": "battery",
+        },
+        {
+            "key": "│ {#33}󰩟 network  {#keys}│",
+            "type": "localip",
+            "format": "{ipv4} ({ifname})"
+        },
+        {
+            "key": "├────────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#39}  colors   {#keys}│",
+            "type": "colors",
+            "symbol": "square"
+        },
+        {
+            "key": "╰────────────╯",
+            "type": "custom"
+        },
+        {
+            "key": "              ",
+            "type": "custom"
+        }
+    ]
+}
