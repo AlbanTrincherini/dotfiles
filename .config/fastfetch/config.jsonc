@@ -34,14 +34,14 @@
         {
             "key": "│ {#33}󰅐 datetime {#keys}│",
             "type": "datetime",
-            "format": "{day-in-month}/{month-pretty}/{year} — {hour-pretty}:{minute-pretty}"
+            "format": "{day-pretty}/{month-pretty}/{year} — {hour-pretty}:{minute-pretty}"
         },
         {
             "key": "│ {#34}󱫡 uptime   {#keys}│",
             "type": "uptime"
         },
         {
-            "key": "│ {#35}\udb82\udcc7 distro   {#keys}│",
+            "key": "│ {#35}{icon} distro   {#keys}│",
             "type": "os"
         },
         {
