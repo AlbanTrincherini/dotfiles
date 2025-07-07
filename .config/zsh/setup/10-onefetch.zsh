@@ -1,7 +1,6 @@
 #!/bin/zsh
 
 # git repository greeter
-
 if command -v onefetch 2>&1 >/dev/null; then
   
   # Taken from https://github.com/o2sh/onefetch/wiki/getting-started#1-bash--zsh
@@ -11,7 +10,8 @@ if command -v onefetch 2>&1 >/dev/null; then
    
    if [ "$current_repository" ] && \
       [ "$current_repository" != "$last_repository" ]; then
-    onefetch --nerd-fonts \
+    onefetch \
+    --nerd-fonts \
     --no-bots \
     --image ~/images/lapis-onefetch.png \
     --text-colors 1 2 6 2 6 13 \
@@ -24,5 +24,5 @@ if command -v onefetch 2>&1 >/dev/null; then
    check_directory_for_new_repository
   }
 else
-  echo ".zshrc: onefetch not found (sudo pacman -S onefetch)"
+  echo "$0: onefetch not found (sudo pacman -S onefetch)"
 fi
